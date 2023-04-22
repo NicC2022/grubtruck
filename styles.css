@@ -254,7 +254,16 @@ I was struggling, but got to something very similar.
   display: none;
 }
 
+/* I wanted to make a simple horizontal image scroll so that the images would 
+present better on smaller screens. I found this article that walked through the 
+process concisely. https://matemarschalko.medium.com/css-only-interactive-swipeable-image-carousel-3a38afe3da58
+ */
+
 @media screen and (max-width: 675px) {
+  #faves-section {
+    margin-bottom: 2rem;
+  }
+  
   #faves-section h1 {
     font-size: 2rem;
   }
@@ -400,11 +409,16 @@ h3 {
   .chef-bio {
     display: none;
   }
+  
 
   .chef {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
+  }
+
+  .chef-photo {
+    padding: 1rem;
   }
 
   .row2 {
